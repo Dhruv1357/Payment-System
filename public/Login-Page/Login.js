@@ -25,7 +25,7 @@ login2.addEventListener('click',function()
         message.textContent = "Password must be atleast 8 characters";
         message.style.color = 'red';
     }
-    
+
     else
     {
         if(isLoginMode)
@@ -37,10 +37,16 @@ login2.addEventListener('click',function()
         else
         {
             message.textContent = "Registration successful";
-            message.style.color = 'white';
+            message.style.color = 'green';
+
+            setTimeout(function()
+            {
+                window.location.href = "../Dashboard/Dashboard.html";
+            }, 800);
         }
     }
 })
+
 
 register.addEventListener('click',function()
 {
