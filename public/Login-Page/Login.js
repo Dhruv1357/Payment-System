@@ -25,6 +25,7 @@ login2.addEventListener('click',function()
         message.textContent = "Password must be atleast 8 characters";
         message.style.color = 'red';
     }
+    
     else
     {
         if(isLoginMode)
